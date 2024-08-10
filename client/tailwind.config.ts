@@ -15,7 +15,7 @@ const config = {
   theme: {
     backgroundImage: {
       "primary-gradient":
-        " linear-gradient(to right bottom, #c3d8f6, #9dbbe9, #789ddb, #5280cd, #2664be)",
+        " linear-gradient(95deg, #c3d8f6, #9dbbe9, #789ddb, #5280cd, #2664be)",
     },
     container: {
       center: true,
