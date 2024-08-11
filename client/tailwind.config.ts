@@ -16,6 +16,8 @@ const config = {
     backgroundImage: {
       "primary-gradient":
         " linear-gradient(95deg, #c3d8f6, #9dbbe9, #789ddb, #5280cd, #2664be)",
+      "primary-gradient-dark":
+        " linear-gradient(-45deg,  #78adfc, #5e8bd2, #456aaa, #2b4c83, #0f2f5e)",
     },
     container: {
       center: true,
