@@ -31,7 +31,8 @@ function NavOption({ className }: { className: string }) {
 
     let dropDownRef = useRef<any>()
     return (
-        <section className={cn('bg-secondary h-[80%] rounded-md md:rounded-full font-semibold  justify-center items-center list-none gap-1 px-2  flex flex-col md:flex-row', className)}>
+        <section className={cn('bg-secondary h-[80%] rounded-md md:rounded-full font-semibold  justify-center items-center list-none gap-1 px-2  flex flex-col md:flex-row relative', className)}>
+            
             {
                 Paths?.map((e) => {
                     return (

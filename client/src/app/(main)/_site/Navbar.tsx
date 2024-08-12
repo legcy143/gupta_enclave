@@ -15,14 +15,15 @@ import NavOption from './client_actions/NavOption';
 
 export default function Navbar() {
     return (
-        <NavbarScrollTriger className='fixed top-0 left-0 h-[5rem] w-full flex items-center justify-between px-3 lg:px-16 gap-1 md:gap-5 lg:gap-10 z-40'>
+        <NavbarScrollTriger className='fixed top-0 left-0 h-[5rem] w-[100vw] flex items-center justify-between px-3 lg:px-16 gap-1 md:gap-5 lg:gap-10 z-40'>
             <section className='flex-1 flex items-center  gap-1 '>
                 <DropdownMenu>
-                    <DropdownMenuTrigger className='outline-none md:hidden'>
-                        <IoMenu className='text-3xl' />
+                    <DropdownMenuTrigger className='outline-none md:hidden border-2 border-app_theme backdrop-blur-lg rounded-full p-1'>
+                        <IoMenu className='text-2xl' />
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent className='outline-none bg-transparent border-none'>
-                        <DropdownMenuItem>
+                    <DropdownMenuContent className='outline-none bg-transparent border-none p-0 pl-1 pt-4 backdrop-blur-0 shadow-none blur-0 w-fit'>
+                        <DropdownMenuItem className='p-0 w-fit relative'>
+                            <div className="top-[-0.7rem] left-3 rotate-45 absolute bg-secondary w-7 aspect-square " />
                             <NavOption className='gap-0 py-1 ' />
                         </DropdownMenuItem>
                     </DropdownMenuContent>
