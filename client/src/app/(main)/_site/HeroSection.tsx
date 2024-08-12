@@ -10,7 +10,7 @@ import { PiHouseLineBold } from "react-icons/pi";
 
 export default function HeroSection() {
     return (
-        <section className='pt-[5rem] h-[100%] md:h-[90vh] max-h-[50rem]  relative mb-[4rem] bg-primary-gradient dark:bg-primary-gradient-dark flex flex-col items-center'>
+        <section className='pt-[5rem] mt-[-5rem] h-[100%] md:h-[90vh] max-h-[50rem]  relative mb-[4rem] bg-primary-gradient dark:bg-primary-gradient-dark flex flex-col items-center'>
             <MiddleSection />
             <BottomSection />
         </section>

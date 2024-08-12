@@ -11,17 +11,20 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { cn } from '@/lib/utils';
+import NavOption from './client_actions/NavOption';
 
 export default function Navbar() {
     return (
-        <NavbarScrollTriger className='fixed top-0 left-0 h-[5rem] w-full flex items-center justify-between px-3 md:px-16 gap-5 md:gap-10 z-40'>
+        <NavbarScrollTriger className='fixed top-0 left-0 h-[5rem] w-full flex items-center justify-between px-3 lg:px-16 gap-1 md:gap-5 lg:gap-10 z-40'>
             <section className='flex-1 flex items-center  gap-1 '>
                 <DropdownMenu>
                     <DropdownMenuTrigger className='outline-none md:hidden'>
                         <IoMenu className='text-3xl' />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className='outline-none bg-transparent border-none'>
-                        <NavOption className='gap-10 py-10'/>
+                        <DropdownMenuItem>
+                            <NavOption className='gap-0 py-1 ' />
+                        </DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
 
@@ -39,35 +42,3 @@ export default function Navbar() {
 }
 
 
-const NavOption = ({ className }: { className: string }) => {
-    let Paths = [
-        {
-            title: "home",
-            url: "/"
-        }, {
-            title: "properties",
-            url: "/properties"
-        }, {
-            title: "service",
-            url: "/service"
-        }, {
-            title: "about",
-            url: "/about"
-        }
-        , {
-            title: "contact",
-            url: "/contact"
-        }
-    ]
-    return (
-        <section className={cn('bg-secondary h-[80%] flex-1 rounded-md md:rounded-full font-semibold  justify-center items-center list-none gap-10 px-10 flex flex-col md:flex-row', className)}>
-            {
-                Paths?.map((e) => {
-                    return (
-                        <li className='cursor-pointer capitalize' key={e.title}>{e.title}</li>
-                    )
-                })
-            }
-        </section>
-    )
-}
