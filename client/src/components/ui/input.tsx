@@ -11,18 +11,18 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     return (
       <div
         className={cn(
-          "flex items-center rounded-full border-[1.5px] border-input bg-transparent px-3 py-1 shadow-sm transition-colors focus-within:ring-1 focus-within:ring-ring",
+          "flex items-center rounded-full border-[1.5px] border-input bg-transparent p-1 shadow-sm transition-colors focus-within:ring-1 focus-within:ring-ring",
           className
         )}
       >
         {startContent && (
-          <span className="mr-2 text-muted-foreground">
+          <span className="text-muted-foreground">
             {startContent}
           </span>
         )}
         <input
           type={type}
-          className="flex-1 bg-transparent text-sm focus:outline-none p-1"
+          className="flex-1 w-full bg-transparent text-sm focus:outline-none p-1"
           ref={ref}
           {...props}
         />
