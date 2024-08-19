@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --app-theme: #356dbe;
+    --app-theme:215, 56%, 48%;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;

@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { cn } from '@/lib/utils';
 import NavOption from './client_actions/NavOption';
+import { FaUser } from 'react-icons/fa';
 
 export default function Navbar() {
     return (
@@ -36,7 +37,10 @@ export default function Navbar() {
             </section>
             <NavOption className='hidden md:flex' />
             <section className='flex-1 flex justify-end'>
-                <Button variant={'secondary'}>Login/signup</Button>
+                <Button variant={'outline'}>
+                    <FaUser/>
+                    Login/signup
+                    </Button>
             </section>
         </NavbarScrollTriger>
     )

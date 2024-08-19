@@ -7,6 +7,7 @@ import { HiOutlineOfficeBuilding } from "react-icons/hi";
 import { FaStore } from "react-icons/fa";
 import { MdVilla, MdOutlineApartment } from "react-icons/md";
 import { PiHouseLineBold } from "react-icons/pi";
+import CircleBubble from '@/components/Shapes/CircleBubble';
 
 export default function HeroSection() {
     return (
@@ -38,11 +39,7 @@ const MiddleSection = ({ className }: { className?: string }) => {
     )
 }
 
-const CircleBubble = ({ className }: { className?: string }) => {
-    return (
-        <div className={cn("rounded-full w-20 aspect-square bg-primary-gradient dark:bg-primary-gradient-dark absolute", className)}></div>
-    )
-}
+
 
 
 const BottomSection = ({ className }: { className?: string }) => {
