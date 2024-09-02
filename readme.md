@@ -2,3 +2,6 @@
 Next JS + Shadcn UI Template
 
 ## Backend
+
+## Contributor 
+Manish
